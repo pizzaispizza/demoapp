@@ -234,3 +234,7 @@ img {
 appcues-container:not(.fullscreen)[data-pattern-type='shorty'][data-position^='bottom'] {
   bottom: 0px !important;
 }
+.app-content img {
+  width: 500px;
+  height: auto;
+}
