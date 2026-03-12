@@ -57,11 +57,34 @@ img {
 
 /* Nav bar */
 #navigation {
-  width: 75px;
+  width: 110px;
+  min-width: 110px;
   display: flex;
   flex-direction: column;
   padding: 10px;
   color: #fff;
+  transition: width 0.3s ease, min-width 0.3s ease;
+  overflow: hidden;
+}
+
+#navigation.collapsed {
+  width: 45px;
+  min-width: 45px;
+}
+
+/* Toggle button */
+#nav-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  text-align: right;
+  padding: 0 0 8px 0;
+  cursor: pointer;
+}
+
+#nav-toggle:hover {
+  color: rgb(190, 190, 190);
 }
 
 #navigation a {
@@ -69,11 +92,31 @@ img {
   font-weight: 700;
   text-decoration: none;
   color: #fff;
-  text-align: end;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
 }
 
 #navigation a:hover {
   color: rgb(190, 190, 190);
+}
+
+.nav-icon {
+  font-size: 16px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.nav-label {
+  transition: opacity 0.2s ease;
+  opacity: 1;
+}
+
+#navigation.collapsed .nav-label {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
 }
 
 /* Appcues Launchpad styling */
