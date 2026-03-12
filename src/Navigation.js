@@ -1,21 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-/* 
-  feel free to add/remove any HTML you would like. Just remember that all content
-  must be returned nested inside a single element (in this case, the #navigation div)
-*/
+const Navigation = () => {
+  const [collapsed, setCollapsed] = useState(false);
 
-const Navigation = () => (
-
-  <div id="navigation">
-    <Link to="/">Home</Link>
-    <Link to="/about">About</Link>
-    <Link to="/contact">Contact</Link>
-    <Link to="/settings">Settings</Link>
-    <Link to="/login">Login</Link>
-    <div id="launchpad"></div> 
-  </div>
-);
+  return (
+    <div id="navigation" className={collapsed ? "collapsed" : ""}>
+      <button id="nav-toggle" onClick={() => setCollapsed(!collapsed)}>
+        {collapsed ? "»" : "«"}
+      </button>
+      <Link to="/" title="Home">
+        <span className="nav-icon">🏠</span>
+        <span className="nav-label">Home</span>
+      </Link>
+      <Link to="/about" title="About">
+        <span className="nav-icon">ℹ️</span>
+        <span className="nav-label">About</span>
+      </Link>
+      <Link to="/contact" title="Contact">
+        <span className="nav-icon">✉️</span>
+        <span className="nav-label">Contact</span>
+      </Link>
+      <Link to="/settings" title="Settings">
+        <span className="nav-icon">⚙️</span>
+        <span className="nav-label">Settings</span>
+      </Link>
+      <Link to="/login" title="Login">
+        <span className="nav-icon">👤</span>
+        <span className="nav-label">Login</span>
+      </Link>
+      <div id="launchpad"></div>
+    </div>
+  );
+};
 
 export default Navigation;
