@@ -124,7 +124,6 @@ img {
 #launchpad {
   padding-top: 5px;
   width: 25px;
-  left: calc(100% - 25px);
 }
 
 #launchpad:hover {
