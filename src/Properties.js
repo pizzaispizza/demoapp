@@ -14,7 +14,7 @@ const Properties = () => {
   // --- Group Properties ---
   const [groupId, setGroupId] = useState("demo-account-001");
   const [groupProps, setGroupProps] = useState({
-    companyName: "Acme Corp",
+    companyName: "AppcuesTest",
     planType: "trial",
     planTier: "standard",
     employeeCount: "50",
