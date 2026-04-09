@@ -25,7 +25,18 @@ const App = () => {
 
   window.Appcues.identify(userId, { // feel free to add in any user properties here
     role: "tester",
+    email: "support@appcues.com",
     signupDate: currentTime
+  })
+
+  window.Appcues.group("demo-account-001", {
+    companyName: "AppcuesTest",
+    planType: "trial",
+    planTier: "standard",
+    employeeCount: 50,
+    mrr: 500,
+    industry: "SaaS",
+    betaUser: false
   })
 
   window.Appcues.on("all", function(name, payload) {

@@ -7,6 +7,7 @@ import Contact from "./Contact";
 import Navigation from "./Navigation";
 import Login from "./Login";
 import Settings from "./Settings";
+import Properties from "./Properties";
 import Toolbar from "./appcuesComponents/Toolbar";
 
 /* 
@@ -31,6 +32,7 @@ const AppcuesRouter = () => {
         <Route path="/contact" component={Contact} />
         <Route path="/login" component={Login} />
         <Route path="/settings" component={Settings} />
+        <Route path="/properties" component={Properties} />
       </Switch>
       <Toolbar />
     </div>

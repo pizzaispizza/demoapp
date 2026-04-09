@@ -149,6 +149,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: auto;
 }
 
 .app-content button {
@@ -269,6 +270,116 @@ img {
 #events-log p {
   color: #66FF66;
   margin-left: 5px;
+}
+
+/* Properties page */
+
+.properties-section {
+  width: 80%;
+  margin: 15px 0;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 8px;
+  padding: 15px 20px;
+}
+
+.properties-section h2 {
+  margin-bottom: 8px;
+}
+
+.properties-section p {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.properties-section code {
+  background: rgba(0,0,0,0.1);
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.group-id-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.group-id-row label {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.group-id-row input {
+  flex: 1;
+  max-width: 300px;
+}
+
+.properties-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.properties-table th {
+  text-align: left;
+  padding: 6px 10px;
+  background-color: rgba(0, 8, 63, 0.15);
+  font-weight: 700;
+}
+
+.properties-table td {
+  padding: 4px 10px;
+  border-bottom: 1px solid rgba(0, 8, 63, 0.1);
+}
+
+.properties-table td:first-child {
+  font-weight: 600;
+  width: 40%;
+}
+
+.properties-table input {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.add-property-row td {
+  padding-top: 8px;
+  border-bottom: none;
+}
+
+.properties-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.add-btn {
+  padding: 5px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  background-color: rgb(222, 222, 249);
+}
+
+.send-btn {
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: rgb(16, 140, 197) !important;
+  color: #fff !important;
+}
+
+.send-btn:hover {
+  background-color: rgb(14, 114, 160) !important;
+}
+
+.status-message {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(0, 100, 0);
 }
 
 /* custom Appcues styling */

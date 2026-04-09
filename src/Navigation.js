@@ -21,6 +21,10 @@ const Navigation = () => {
         <span className="nav-icon">✉️</span>
         <span className="nav-label">Contact</span>
       </Link>
+      <Link to="/properties" title="Properties">
+        <span className="nav-icon">🏷️</span>
+        <span className="nav-label">Properties</span>
+      </Link>
       <Link to="/settings" title="Settings">
         <span className="nav-icon">⚙️</span>
         <span className="nav-label">Settings</span>
