@@ -8,6 +8,7 @@ import Navigation from "./Navigation";
 import Login from "./Login";
 import Settings from "./Settings";
 import Properties from "./Properties";
+import IFrames from "./IFrames";
 import Toolbar from "./appcuesComponents/Toolbar";
 
 /* 
@@ -33,6 +34,7 @@ const AppcuesRouter = () => {
         <Route path="/login" component={Login} />
         <Route path="/settings" component={Settings} />
         <Route path="/properties" component={Properties} />
+        <Route path="/iframes" component={IFrames} />
       </Switch>
       <Toolbar />
     </div>

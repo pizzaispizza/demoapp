@@ -21,6 +21,10 @@ const Navigation = () => {
         <span className="nav-icon">✉️</span>
         <span className="nav-label">Contact</span>
       </Link>
+      <Link to="/iframes" title="iFrames">
+        <span className="nav-icon">🖼️</span>
+        <span className="nav-label">iFrames</span>
+      </Link>
       <Link to="/properties" title="Properties">
         <span className="nav-icon">🏷️</span>
         <span className="nav-label">Properties</span>
