@@ -9,6 +9,7 @@ import Login from "./Login";
 import Settings from "./Settings";
 import Properties from "./Properties";
 import IFrames from "./IFrames";
+import DynamicElements from "./DynamicElements";
 import Toolbar from "./appcuesComponents/Toolbar";
 
 /* 
@@ -34,6 +35,7 @@ const AppcuesRouter = () => {
         <Route path="/login" component={Login} />
         <Route path="/settings" component={Settings} />
         <Route path="/properties" component={Properties} />
+        <Route path="/dynamic-elements" component={DynamicElements} />
         <Route path="/iframes" component={IFrames} />
       </Switch>
       <Toolbar />
