@@ -21,6 +21,10 @@ const Navigation = () => {
         <span className="nav-icon">✉️</span>
         <span className="nav-label">Contact</span>
       </Link>
+      <Link to="/dynamic-elements" title="Dynamic Elements">
+        <span className="nav-icon">⚡</span>
+        <span className="nav-label">Dynamic</span>
+      </Link>
       <Link to="/iframes" title="iFrames">
         <span className="nav-icon">🖼️</span>
         <span className="nav-label">iFrames</span>
