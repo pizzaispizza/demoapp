@@ -21,6 +21,10 @@ const Navigation = () => {
         <span className="nav-icon">✉️</span>
         <span className="nav-label">Contact</span>
       </Link>
+      <Link to="/url-modals" title="URL Modals">
+        <span className="nav-icon">🔗</span>
+        <span className="nav-label">URL Modals</span>
+      </Link>
       <Link to="/dynamic-elements" title="Dynamic Elements">
         <span className="nav-icon">⚡</span>
         <span className="nav-label">Dynamic</span>
