@@ -11,6 +11,7 @@ import Properties from "./Properties";
 import IFrames from "./IFrames";
 import DynamicElements from "./DynamicElements";
 import UrlModals from "./UrlModals";
+import EventAttributes from "./EventAttributes";
 import Toolbar from "./appcuesComponents/Toolbar";
 
 /* 
@@ -36,6 +37,7 @@ const AppcuesRouter = () => {
         <Route path="/login" component={Login} />
         <Route path="/settings" component={Settings} />
         <Route path="/properties" component={Properties} />
+        <Route path="/event-attributes" component={EventAttributes} />
         <Route path="/url-modals" component={UrlModals} />
         <Route path="/dynamic-elements" component={DynamicElements} />
         <Route path="/iframes" component={IFrames} />
