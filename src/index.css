@@ -272,6 +272,85 @@ img {
   margin-left: 5px;
 }
 
+/* Event Attributes page */
+
+.event-attr-grid {
+  display: flex;
+  gap: 16px;
+  width: 90%;
+  margin: 16px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.event-attr-card {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 8px;
+  padding: 16px;
+  flex: 1;
+  min-width: 200px;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.event-attr-card h2 {
+  font-size: 16px;
+  text-align: left;
+  padding: 0;
+}
+
+.event-attr-card p {
+  font-size: 13px;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.event-attr-table {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: rgba(0, 8, 63, 0.07);
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.event-attr-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  gap: 8px;
+}
+
+.event-attr-key {
+  font-weight: 700;
+  color: rgb(0, 8, 63);
+}
+
+.event-attr-value {
+  color: rgb(16, 100, 160);
+  font-family: monospace;
+}
+
+.event-attr-confirmation {
+  margin-top: 8px;
+  padding: 10px 16px;
+  background: rgba(0, 150, 0, 0.1);
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(0, 80, 0);
+}
+
+.event-attr-confirmation code {
+  background: rgba(0, 0, 0, 0.08);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
 /* Dynamic Elements page */
 
 .modal-trigger-group {

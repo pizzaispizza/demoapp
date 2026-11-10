@@ -21,6 +21,10 @@ const Navigation = () => {
         <span className="nav-icon">✉️</span>
         <span className="nav-label">Contact</span>
       </Link>
+      <Link to="/event-attributes" title="Event Attributes">
+        <span className="nav-icon">🎯</span>
+        <span className="nav-label">Events</span>
+      </Link>
       <Link to="/url-modals" title="URL Modals">
         <span className="nav-icon">🔗</span>
         <span className="nav-label">URL Modals</span>
